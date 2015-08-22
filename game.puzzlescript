@@ -3,6 +3,7 @@ author Josh & Casey
 homepage uhacc.club
 require_player_movement
 youtube cmiX1FrL_88
+verbose_logging
 
 ========
 OBJECTS
@@ -96,6 +97,7 @@ Yellow Brown #05ff1a
 LEGEND
 =======
 
+# = Border
 . = Background
 @ = Player
 P = PirateShip
@@ -141,23 +143,52 @@ late [ Player | PirateShip ] -> [ Player | TentaclePirateShip ]
 ==============
 WINCONDITIONS
 ==============
+
 No CargoShip
 No TentacleShip
-
 
 =======
 LEVELS
 =======
-message Cargo Ships are Tasty!
+(Test Level
 
+............
+..........i.
+.........ii.
+........iti.
+...i....iit.
+..ii.....i..
+.it.........
+...@.ciit...
+.....ii.i...
+............
+)
+
+message Cargo Ships are Tasty!
 (Level 1)
 ...........
 ....c....i.
-..p.....ii.
-c......iti.
+........ii.
+.......itic
 ..i....iit.
-.ii.....i..
+cii.....i..
 it.........
-..@..iit...
-....ii.ic..
+..@.piit...
+....iici...
+...........
+
+message Don't Eat the Pirates!
+(Level 2)
+....i......
+...ici.....
+..ppctiii..
+....pcii.@p
+.......i.p.
+..t........
+.tti.......
+....pii....
+....i.ci...
 ......p....
+
+
+
