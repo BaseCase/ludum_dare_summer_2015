@@ -5,7 +5,7 @@ require_player_movement
 youtube cmiX1FrL_88
 verbose_logging
 run_rules_on_level_start
-
+realtime_interval 0.5
 
 ========
 OBJECTS
@@ -94,13 +94,21 @@ DarkBrown Brown Black Purple Pink
 00034
 .0330
 
-Shipwreck
-Blue Brown LightBlue
+CargoShipwreck
+Blue Black Red Gray
 00020
-10000
-01001
-01010
-00000
+13030
+02001
+00010
+10200
+
+PirateShipwreck
+Blue DarkBrown Brown Black
+00100
+20003
+00021
+11000
+00100
 
 Island
 Yellow Brown
@@ -118,10 +126,48 @@ Yellow Brown #05ff1a
 00100
 01110
 
+Whirlpool1
+#0022ff #00e5ff DarkBlue
+00000
+02110
+01210
+01120
+00000
+
+Whirlpool2
+#0022ff #00e5ff DarkBlue
+00000
+01110
+02220
+01110
+00000
+
+Whirlpool3
+#0022ff #00e5ff DarkBlue
+00000
+01120
+01210
+02110
+00000
+
+Whirlpool4
+#0022ff #00e5ff DarkBlue
+00000
+01210
+01210
+01210
+00000
+
+temp
+white
+
 
 =======
 LEGEND
 =======
+(Whirlpool)
+
+Whirlpool = Whirlpool1 or Whirlpool2 or Whirlpool3 or Whirlpool4
 
 . = Background
 # = Sidebar
@@ -132,8 +178,10 @@ P = PirateShip
 C = CargoShip
 I = Island
 T = Tree
+W = Whirlpool1
 
 Ship = CargoShip or PirateShip
+
 TentacleShip = TentacleCargoShip or TentaclePirateShip
 
 
@@ -141,8 +189,9 @@ TentacleShip = TentacleCargoShip or TentaclePirateShip
 SOUNDS
 =======
 
-Shipwreck create 20478308
+PirateShipwreck create 20478308
 PlayerDead move 89775108
+CargoShipwreck create 77051508
 
 
 ================
@@ -150,7 +199,8 @@ COLLISIONLAYERS
 ================
 
 Background
-Player, Ship, GoalShip, CompletedGoal, EmptyGoal, TentacleShip, Shipwreck, Island, Tree, PlayerDead, GoalShip, Sidebar
+temp
+Player, Ship, GoalShip, CompletedGoal, EmptyGoal, TentacleShip, CargoShipwreck, PirateShipwreck, Island, Tree, PlayerDead, GoalShip, Sidebar, Whirlpool
 
 
 ======
@@ -160,15 +210,32 @@ RULES
 late [ Player | CargoShip ] -> [ Player | TentacleCargoShip ]
 [ EmptyGoal ] [ > Player | TentacleCargoShip ] -> [ CompletedGoal ] [ > Player | ]
 [ > Player | TentacleCargoShip ] -> [ > Player | ]
-[ < Player | TentacleCargoShip ] -> [ < Player | Shipwreck ]
+[ < Player | TentacleCargoShip ] -> [ < Player | CargoShipwreck ]
 [ TentacleCargoShip | no Player ] -> [ CargoShip | ]
 
 late [ Player | PirateShip ] -> [ Player | TentaclePirateShip ]
 [ > Player | TentaclePirateShip ] -> [ > PlayerDead | ]
-[ < Player | TentaclePirateShip ] -> [ < Player | Shipwreck ]
+[ < Player | TentaclePirateShip ] -> [ < Player | PirateShipwreck ]
 [ TentaclePirateShip | no Player ] -> [ PirateShip | ]
 
 
+(Whirlpool Realtime)
+
+[stationary Player][Whirlpool1 no temp] -> [stationary Player][Whirlpool2 temp]
+[stationary Player][Whirlpool2 no temp] -> [stationary Player][Whirlpool3 temp]
+[stationary Player][Whirlpool3 no temp] -> [stationary Player][Whirlpool4 temp]
+[stationary Player][Whirlpool4 no temp] -> [stationary Player][Whirlpool1 temp]
+[stationary Player][Whirlpool temp] -> [stationary Player][Whirlpool]
+
+
+(
+(Whirlpool as Player Moves)
+[Whirlpool1 no temp] -> [Whirlpool2 temp]
+[Whirlpool2 no temp] -> [Whirlpool3 temp]
+[Whirlpool3 no temp] -> [Whirlpool4 temp]
+[Whirlpool4 no temp] -> [Whirlpool1 temp]
+late [Whirlpool temp] -> [Whirlpool]
+)
 ==============
 WINCONDITIONS
 ==============
@@ -182,7 +249,7 @@ LEVELS
 
 (Test Level
 
-............
+
 ..........i.
 .........ii.
 ........iti.
@@ -200,22 +267,23 @@ message Cargo Ships are Tasty!
 G....c....i.
 _........ii.
 _.......itic
-_..i....iit.
+_..i.W..iit.
 #cii.....i..
 #it.........
 #..@...iit...
 #....iici...
 #...........
 
+
 message Don't Eat the Pirates!
 (Level 2)
-....i......
-...ici.....
-..ppctiii..
-.....cii.@p
-.......i.p.
-..t........
-.tti.......
-....pii....
-....i.ci...
-......p....
+#...ici.....
+G..ppctiii..
+_.....cii.@p
+_.......i.p.
+_..t........
+#.tti.......
+#....pii....
+#....i.ci...
+#......p....
+
