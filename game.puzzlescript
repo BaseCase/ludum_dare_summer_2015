@@ -88,7 +88,8 @@ late [ Player | CargoShip ] -> [ Player | TentacleCargoShip ]
 ==============
 WINCONDITIONS
 ==============
-
+No CargoShip
+No TentacleShip
 
 =======
 LEVELS
@@ -102,4 +103,3 @@ LEVELS
 .ccc....
 .ccc....
 .....@..
-
