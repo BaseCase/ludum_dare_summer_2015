@@ -4,6 +4,8 @@ homepage uhacc.club
 require_player_movement
 youtube cmiX1FrL_88
 verbose_logging
+run_rules_on_level_start
+
 
 ========
 OBJECTS
@@ -188,5 +190,4 @@ message Don't Eat the Pirates!
 ....pii....
 ....i.ci...
 ......p....
-
 
