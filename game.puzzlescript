@@ -114,9 +114,9 @@ TentacleShip = TentacleCargoShip or TentaclePirateShip
 SOUNDS
 =======
 
-Shipwreck create 20478308
-
+TentaclePirateShip destroy 20478308
 PlayerDead move 89775108
+TentacleCargoShip destroy 77051508
 
 ================
 COLLISIONLAYERS
@@ -153,7 +153,7 @@ LEVELS
 =======
 (Test Level
 
-............
+
 ..........i.
 .........ii.
 ........iti.
@@ -167,7 +167,6 @@ LEVELS
 
 message Cargo Ships are Tasty!
 (Level 1)
-...........
 ....c....i.
 ........ii.
 .......itic
@@ -180,7 +179,6 @@ it.........
 
 message Don't Eat the Pirates!
 (Level 2)
-....i......
 ...ici.....
 ..ppctiii..
 .....cii.@p
