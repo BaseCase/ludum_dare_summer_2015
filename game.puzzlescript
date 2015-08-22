@@ -5,7 +5,7 @@ require_player_movement
 youtube cmiX1FrL_88
 verbose_logging
 run_rules_on_level_start
-
+realtime_interval 0.5
 
 ========
 OBJECTS
@@ -218,24 +218,24 @@ late [ Player | PirateShip ] -> [ Player | TentaclePirateShip ]
 [ < Player | TentaclePirateShip ] -> [ < Player | PirateShipwreck ]
 [ TentaclePirateShip | no Player ] -> [ PirateShip | ]
 
-(
-(Whirlpool Realtime -- Not Working )
+
+(Whirlpool Realtime)
 
 [stationary Player][Whirlpool1 no temp] -> [stationary Player][Whirlpool2 temp]
 [stationary Player][Whirlpool2 no temp] -> [stationary Player][Whirlpool3 temp]
 [stationary Player][Whirlpool3 no temp] -> [stationary Player][Whirlpool4 temp]
 [stationary Player][Whirlpool4 no temp] -> [stationary Player][Whirlpool1 temp]
-late [stationary Player][Whirlpool temp] -> [stationary Player][Whirlpool]
+[stationary Player][Whirlpool temp] -> [stationary Player][Whirlpool]
 
-)
 
+(
 (Whirlpool as Player Moves)
 [Whirlpool1 no temp] -> [Whirlpool2 temp]
 [Whirlpool2 no temp] -> [Whirlpool3 temp]
 [Whirlpool3 no temp] -> [Whirlpool4 temp]
 [Whirlpool4 no temp] -> [Whirlpool1 temp]
 late [Whirlpool temp] -> [Whirlpool]
-
+)
 ==============
 WINCONDITIONS
 ==============
