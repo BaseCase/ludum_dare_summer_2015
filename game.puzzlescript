@@ -3,9 +3,9 @@ author Josh & Casey
 homepage uhacc.club
 require_player_movement
 youtube cmiX1FrL_88
-verbose_logging
+(verbose_logging)
 run_rules_on_level_start
-realtime_interval 0.5
+realtime_interval 1
 
 ========
 OBJECTS
@@ -236,6 +236,13 @@ late [ Player | PirateShip ] -> [ Player | TentaclePirateShip ]
 [Whirlpool4 no temp] -> [Whirlpool1 temp]
 late [Whirlpool temp] -> [Whirlpool]
 )
+
+(Whirlpool Rules)
+[ > Player | Whirlpool ] -> [ > PlayerDead | ]
+[ < Player | Whirlpool ] -> [ < Player | Whirlpool ]
+[ ^ Player | Whirlpool ] -> [ > PlayerDead | ] message You are pulled into the Whirlpool!
+[ v Player | Whirlpool ] -> [ > PlayerDead | ] message You are pulled into the Whirlpool!
+
 ==============
 WINCONDITIONS
 ==============
