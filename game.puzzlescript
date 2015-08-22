@@ -130,8 +130,8 @@ late [ Player | CargoShip ] -> [ Player | TentacleCargoShip ]
 [ TentacleCargoShip | no Player ] -> [ CargoShip | ]
 
 late [ Player | PirateShip ] -> [ Player | TentaclePirateShip ]
-[ > Player | TentaclePirateShip ] -> [ > Player | ]
-[ < Player | TentaclePirateShip ] -> [ < PlayerDead | Shipwreck ]
+[ > Player | TentaclePirateShip ] -> [ > PlayerDead | ]
+[ < Player | TentaclePirateShip ] -> [ < Player | Shipwreck ]
 [ TentaclePirateShip | no Player ] -> [ PirateShip | ]
 
 
