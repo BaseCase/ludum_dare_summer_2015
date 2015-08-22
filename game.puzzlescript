@@ -111,6 +111,9 @@ TentacleShip = TentacleCargoShip or TentaclePirateShip
 SOUNDS
 =======
 
+Shipwreck create 20478308
+
+PlayerDead move 89775108
 
 ================
 COLLISIONLAYERS
