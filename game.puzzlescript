@@ -64,6 +64,21 @@ Blue Brown LightBlue
 01010
 00000
 
+Island
+Yellow Brown
+00000
+00000
+00000
+00000
+00000
+
+Tree
+Yellow Brown #05ff1a
+00000
+02200
+02220
+00100
+01110
 
 =======
 LEGEND
@@ -73,6 +88,8 @@ LEGEND
 @ = Player
 P = PirateShip
 C = CargoShip
+I = Island
+T = Tree
 
 Ship = CargoShip or PirateShip
 TentacleShip = TentacleCargoShip or TentaclePirateShip
@@ -88,7 +105,7 @@ COLLISIONLAYERS
 ================
 
 Background
-Player, Ship, TentacleShip, Shipwreck
+Player, Ship, TentacleShip, Shipwreck, Island, Tree
 
 
 ======
@@ -115,12 +132,16 @@ No TentacleShip
 =======
 LEVELS
 =======
+message Cargo Ships are Tasty!
 
-........
-.p......
-...p....
-........
-........
-........
-.c.c....
-.....@..
+(Level 1)
+...........
+....c....i.
+..p.....ii.
+c......iti.
+..i....iit.
+.ii.....i..
+it.........
+..@..iit...
+....ii.ic..
+......p....
