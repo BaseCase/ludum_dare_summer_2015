@@ -19,6 +19,9 @@ Blue LightBlue
 00000
 00000
 
+Sidebar
+Black
+
 Player
 Pink Purple
 .....
@@ -26,7 +29,6 @@ Pink Purple
 00000
 01010
 .....
-
 
 PlayerDead
 Black White
@@ -36,8 +38,29 @@ Black White
 00100
 01110
 
+GoalShip
+Black Red Gray DarkGrey
+33333
+32233
+30000
+31113
+33333
 
+EmptyGoal
+White Black
+00000
+01110
+01110
+01110
+00000
 
+CompletedGoal
+White Green
+00000
+01110
+01110
+01110
+00000
 
 CargoShip
 Black Red Gray
@@ -95,11 +118,15 @@ Yellow Brown #05ff1a
 00100
 01110
 
+
 =======
 LEGEND
 =======
 
 . = Background
+# = Sidebar
+G = GoalShip
+_ = EmptyGoal
 @ = Player
 P = PirateShip
 C = CargoShip
@@ -118,12 +145,13 @@ TentaclePirateShip destroy 20478308
 PlayerDead move 89775108
 TentacleCargoShip destroy 77051508
 
+
 ================
 COLLISIONLAYERS
 ================
 
 Background
-Player, Ship, TentacleShip, Shipwreck, Island, Tree, PlayerDead
+Player, Ship, GoalShip, CompletedGoal, EmptyGoal, TentacleShip, Shipwreck, Island, Tree, PlayerDead, GoalShip, Sidebar
 
 
 ======
@@ -131,6 +159,7 @@ RULES
 ======
 
 late [ Player | CargoShip ] -> [ Player | TentacleCargoShip ]
+[ EmptyGoal ] [ > Player | TentacleCargoShip ] -> [ CompletedGoal ] [ > Player | ]
 [ > Player | TentacleCargoShip ] -> [ > Player | ]
 [ < Player | TentacleCargoShip ] -> [ < Player | Shipwreck ]
 [ TentacleCargoShip | no Player ] -> [ CargoShip | ]
@@ -145,12 +174,13 @@ late [ Player | PirateShip ] -> [ Player | TentaclePirateShip ]
 WINCONDITIONS
 ==============
 
-No CargoShip
-No TentacleShip
+No EmptyGoal
+
 
 =======
 LEVELS
 =======
+
 (Test Level
 
 
@@ -167,25 +197,27 @@ LEVELS
 
 message Cargo Ships are Tasty!
 (Level 1)
-....c....i.
-........ii.
-.......itic
-..i....iit.
-cii.....i..
-it.........
-..@...iit...
-....iici...
-...........
+#...........
+G....c....i.
+_........ii.
+_.......itic
+_..i....iit.
+#cii.....i..
+#it.........
+#..@...iit...
+#....iici...
+#...........
+
 
 message Don't Eat the Pirates!
 (Level 2)
-...ici.....
-..ppctiii..
-.....cii.@p
-.......i.p.
-..t........
-.tti.......
-....pii....
-....i.ci...
-......p....
+#...ici.....
+G..ppctiii..
+_.....cii.@p
+_.......i.p.
+_..t........
+#.tti.......
+#....pii....
+#....i.ci...
+#......p....
 
