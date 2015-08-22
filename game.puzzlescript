@@ -1,0 +1,57 @@
+title LD33 untitled
+author Josh & Casey
+homepage uhacc.club
+
+
+========
+OBJECTS
+========
+
+Background
+Black
+
+Player
+White
+
+
+=======
+LEGEND
+=======
+
+. = Background
+@ = Player
+
+
+=======
+SOUNDS
+=======
+
+
+================
+COLLISIONLAYERS
+================
+
+Background
+Player
+
+
+======
+RULES
+======
+
+
+==============
+WINCONDITIONS
+==============
+
+
+=======
+LEVELS
+=======
+
+.....
+.....
+..@..
+.....
+.....
+
