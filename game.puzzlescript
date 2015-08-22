@@ -8,10 +8,45 @@ OBJECTS
 ========
 
 Background
-Black
+Blue LightBlue
+00010
+01000
+00000
+00100
+00000
 
 Player
-White
+Pink Purple
+00000
+01010
+01010
+00000
+00000
+
+CargoShip
+Brown Gray
+.....
+.11..
+.11..
+00000
+.000.
+
+PirateShip
+Brown Gray Black
+...22
+...22
+0..1.
+00000
+.000.
+
+TentacleCargoShip
+Red
+
+TentaclePirateShip
+Green
+
+Shipwreck
+Black
 
 
 =======
@@ -20,7 +55,11 @@ LEGEND
 
 . = Background
 @ = Player
+P = PirateShip
+C = CargoShip
 
+Ship = CargoShip or PirateShip
+TentacleShip = TentacleCargoShip or TentaclePirateShip
 
 =======
 SOUNDS
@@ -32,12 +71,17 @@ COLLISIONLAYERS
 ================
 
 Background
-Player
+Player, Ship, TentacleShip, Shipwreck
 
 
 ======
 RULES
 ======
+
+late [ Player | CargoShip ] -> [ Player | TentacleCargoShip ]
+[ > Player | TentacleCargoShip ] -> [ > Player | ]
+[ < Player | TentacleCargoShip ] -> [ < Player | Shipwreck ]
+[ TentacleCargoShip | no Player ] -> [ CargoShip | ]
 
 
 ==============
@@ -49,9 +93,12 @@ WINCONDITIONS
 LEVELS
 =======
 
-.....
-.....
-..@..
-.....
-.....
+........
+........
+........
+.ccc....
+.ccc....
+.ccc....
+.ccc....
+.....@..
 
