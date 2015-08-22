@@ -10,10 +10,10 @@ OBJECTS
 
 Background
 Blue LightBlue
-00010
-01000
 00000
-00100
+00000
+00000
+00000
 00000
 
 Player
@@ -25,29 +25,44 @@ Pink Purple
 00000
 
 CargoShip
-Brown Gray
+Black Red Gray
 .....
-.11..
-.11..
-00000
-.000.
+.22..
+.0000
+.111.
+.....
 
 PirateShip
-Brown Gray Black
-...22
-...22
-0..1.
+DarkBrown Brown Black
+..12.
+..1..
+..1..
 00000
-.000.
+.0000
 
 TentacleCargoShip
-Red
+Black Red Gray Purple Pink
+...3.
+.2343
+.0300
+.131.
+.33..
 
 TentaclePirateShip
-Green
+DarkBrown Brown Black Purple Pink
+.312.
+.433.
+..1.3
+00034
+.0330
 
 Shipwreck
-Black
+Blue Brown LightBlue
+00020
+10000
+01001
+01010
+00000
 
 
 =======
@@ -61,6 +76,7 @@ C = CargoShip
 
 Ship = CargoShip or PirateShip
 TentacleShip = TentacleCargoShip or TentaclePirateShip
+
 
 =======
 SOUNDS
@@ -84,6 +100,11 @@ late [ Player | CargoShip ] -> [ Player | TentacleCargoShip ]
 [ < Player | TentacleCargoShip ] -> [ < Player | Shipwreck ]
 [ TentacleCargoShip | no Player ] -> [ CargoShip | ]
 
+late [ Player | PirateShip ] -> [ Player | TentaclePirateShip ]
+[ > Player | TentaclePirateShip ] -> [ > Player | ]
+[ < Player | TentaclePirateShip ] -> [ < Player | Shipwreck ]
+[ TentaclePirateShip | no Player ] -> [ PirateShip | ]
+
 
 ==============
 WINCONDITIONS
@@ -96,10 +117,10 @@ LEVELS
 =======
 
 ........
+.p......
+...p....
 ........
 ........
-.ccc....
-.ccc....
-.ccc....
-.ccc....
+........
+.c.c....
 .....@..
