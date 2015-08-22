@@ -12,12 +12,13 @@ OBJECTS
 ========
 
 Background
-Blue LightBlue
+#1072da #177eee
+00001
+00100
 00000
-00000
-00000
-00000
-00000
+00010
+01000
+
 
 Sidebar
 Black
@@ -111,12 +112,12 @@ Blue DarkBrown Brown Black
 00100
 
 Island
-Yellow Brown
-00000
-00000
-00000
-00000
-00000
+Yellow Brown #cfc930
+00002
+00200
+20002
+00200
+20000
 
 Tree
 Yellow Brown #05ff1a
