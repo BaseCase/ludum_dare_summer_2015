@@ -12,12 +12,13 @@ OBJECTS
 ========
 
 Background
-Blue LightBlue
+#1072da #177eee
+00001
+00100
 00000
-00000
-00000
-00000
-00000
+00010
+01000
+
 
 Sidebar
 Black
@@ -111,12 +112,12 @@ Blue DarkBrown Brown Black
 00100
 
 Island
-Yellow Brown
-00000
-00000
-00000
-00000
-00000
+Yellow Brown #cfc930
+00002
+00200
+20002
+00200
+20000
 
 Tree
 Yellow Brown #05ff1a
@@ -258,56 +259,97 @@ LEVELS
 ((( JOSH LEVELS
 ))))))))))
 
-(Test Level
-..........i.
-.........ii.
-........iti.
-...i....iit.
-..ii.....i..
-.it.........
-...@.ciit...
-.....ii.i...
-............
-)
-
 message Cargo Ships are Tasty!
-(Level 1)
+(Level 1 - introduce goal of eating cargo ships)
 #...........
-G....c....i.
-_........ii.
-_.......itic
-_..i.W..iit.
-#cii.....i..
-#it.........
-#..@...iit...
-#....iici...
+gciiit......
+_.iit.....i.
+_.i......ii.
+_....@.i.....
+#..it..iii..
+#.ii.i...ic.
+#itc.....t..
+#...........
 #...........
 
-message Don't Eat the Pirates!
-(Level 2)
-....i......
-...ici.....
-..ppctiii..
-.....cii.@p
-.......i.p.
-..t........
-.tti.......
-....pii....
-....i.ci...
-......p....
+message Don't get stuck by Cargo Ship debris!
+(Level 2 - introduce the mechanic that moving away from a cargo ship creates debris that cannot be moved)
+#...........
+g....t......
+_...ici...i.
+_...i....ii.
+_....c..iti.
+#..it@iiiiti
+#cii.c...ic.
+#itc........
+#...........
+#...........
 
-#...ici.....
-G..ppctiii..
-_.....cii.@p
-_.......i.p.
-_..t........
-#.tti.......
-#....pii....
-#....i.ci...
-#......p....
+(Level 3 - Cargo Ship debris)
+#........i..i
+g.......tic.i
+_..@..i.i..it
+_i...itii..ii
+_.i.i.iiic..i
+#.c.c.i...iii
+#.t.i.i.ic...
+#ci.i...i....
+#..tt...i....
+#...i...i....
 
+message Avoid the Pirates Ships!
+(Level 4 - introduce goal of avoiding pirate ships to get to cargo ships)
+#.......ii...
+gi...tiiiit..
+_i.p.i..iii..
+_i.i.@..p...i
+_c.tc.....ii.
+#..iii.ppct..
+#.i.i.i.i....
+#ti.iciiii...
+#tt....iii...
+#t.........t.
 
+message You can move Pirate Ship debris.
+(Level 5 - introduce goal of destorying and pushing pirate ships to get to cargo ships)
 
+#....iiit....
+giii.tiiiit..
+_ii.....iiii.
+_i...@...p...
+_tti.itiiciii
+#...pi.p..t..
+#ci.p..ci....
+#.iiiiiiiii..
+#....iiii....
+#.....ti.....
+
+message Destory some, eat others
+(Level 6 - introduce goal of destorying and pushing pirate ships to get to cargo ships)
+
+#............
+gc...tc..ti.
+_...iii...i.
+_..i@..i.pi.
+_i.i...ii...
+#..p.p..ic..
+#t.i.....i..
+#iti.i......
+#...........
+#...........
+
+message Surrounded!
+(Level 7)
+#............
+gc..i.i..c..
+_.i..pip....
+_.iii.i.iii.
+_..p.@.p.ii.
+#itii.ii.ii.
+#....p...ii.
+#..ci....it.
+#...........
+#...........
 
 (((((((
 ((( CASEY LEVELS
