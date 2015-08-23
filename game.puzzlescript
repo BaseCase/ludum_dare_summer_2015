@@ -1,4 +1,4 @@
-title LD33 untitled
+title Tasty Ships
 author Josh & Casey
 homepage uhacc.club
 require_player_movement
@@ -389,3 +389,17 @@ _iii........
 #...........
 #...........
 message GG!!!!!!
+)
+
+
+
+(( some scratch ideas ))
+(
+#.........
+g.........
+_...@..iii
+#...ii..ii
+#...ic.p.c
+#...ii..ii
+#...iiiiii
+)
