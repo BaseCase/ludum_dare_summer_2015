@@ -261,80 +261,95 @@ LEVELS
 
 message Cargo Ships are Tasty!
 (Level 1 - introduce goal of eating cargo ships)
-#ciiit.....
-g.iit.....i
-_.i......ii
-_....@.i...
-_..it..iii.
-#.ii.i...ic
-#itc.....t.
+#...........
+gciiit......
+_.iit.....i.
+_.i......ii.
+_....@.i.....
+#..it..iii..
+#.ii.i...ic.
+#itc.....t..
+#...........
+#...........
 
 message Don't get stuck by Cargo Ship debris!
 (Level 2 - introduce the mechanic that moving away from a cargo ship creates debris that cannot be moved)
-#....t.....
-g...ici...i
-_...i....ii
-_....c..iti
-_..it@iiiit
-#cii.c...ic
-#itc.......
-
+#...........
+g....t......
+_...ici...i.
+_...i....ii.
+_....c..iti.
+#..it@iiiiti
+#cii.c...ic.
+#itc........
+#...........
+#...........
 
 (Level 3 - Cargo Ship debris)
-#.......iic
-g..@..i.i..
-_i...itii..
-_.i.i.iiic.
-_.c.c.i...i
-#.t.i.i.ic.
-#ci.i...i..
+#........i..i
+g.......tic.i
+_..@..i.i..it
+_i...itii..ii
+_.i.i.iiic..i
+#.c.c.i...iii
+#.t.i.i.ic...
+#ci.i...i....
+#..tt...i....
+#...i...i....
 
 message Avoid the Pirates Ships!
 (Level 4 - introduce goal of avoiding pirate ships to get to cargo ships)
-#i...tiiiit
-gi.p.i..iii
-_i.i.@..p..
-_c.tcp....i
-_..iii.ppct
-#.iiiii.i..
-#iiiiiiiiii
-
+#.......ii...
+gi...tiiiit..
+_i.p.i..iii..
+_i.i.@..p...i
+_c.tc.....ii.
+#..iii.ppct..
+#.i.i.i.i....
+#ti.iciiii...
+#tt....iii...
+#t.........t.
 
 message You can move Pirate Ship debris.
 (Level 5 - introduce goal of destorying and pushing pirate ships to get to cargo ships)
 
-#iii.tiiiit
-gii..p..iii
-_i..p@...p.
-_tti.itiici
-_...pi.p..t
-#ci.p..ci..
-#iiiiiiiiii
-
+#....iiit....
+giii.tiiiit..
+_ii.....iiii.
+_i...@...p...
+_tti.itiiciii
+#...pi.p..t..
+#ci.p..ci....
+#.iiiiiiiii..
+#....iiii....
+#.....ti.....
 
 message Destory some, eat others
 (Level 6 - introduce goal of destorying and pushing pirate ships to get to cargo ships)
 
-#c...tc..ti
-g...iii...i
-_..i@..i.pi
-_i.i...ii..
-_..p.p..ic.
-#t.i.....i.
-#iti.i.....
-
+#............
+gc...tc..ti.
+_...iii...i.
+_..i@..i.pi.
+_i.i...ii...
+#..p.p..ic..
+#t.i.....i..
+#iti.i......
+#...........
+#...........
 
 message Surrounded!
 (Level 7)
-
-#c..i.i..c.
-g.i..pip...
-_.iii.i.iii
-_..p.@.p.ii
-_itii.ii.ii
-#....p...ii
-#..ci....it
-
+#............
+gc..i.i..c..
+_.i..pip....
+_.iii.i.iii.
+_..p.@.p.ii.
+#itii.ii.ii.
+#....p...ii.
+#..ci....it.
+#...........
+#...........
 
 (((((((
 ((( CASEY LEVELS
