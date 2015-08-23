@@ -259,53 +259,57 @@ LEVELS
 ((( JOSH LEVELS
 ))))))))))
 
-(Test Level
-..........i.
-.........ii.
-........iti.
-...i....iit.
-..ii.....i..
-.it.........
-...@.ciit...
-.....ii.i...
-............
-)
-
 message Cargo Ships are Tasty!
-(Level 1)
-#...........
-G....c....i.
-_........ii.
-_.......itic
-_..i.W..iit.
-#cii.....i..
-#it.........
-#..@...iit...
-#....iici...
-#...........
+(Level 1 - introduce goal of eating cargo ships)
+#ciiit.....
+g.iit.....i
+_.i......ii
+_....@.i...
+_..it..iii.
+#.ii.i...ic
+#itc.....t.
 
-message Don't Eat the Pirates!
-(Level 2)
-....i......
-...ici.....
-..ppctiii..
-.....cii.@p
-.......i.p.
-..t........
-.tti.......
-....pii....
-....i.ci...
-......p....
+message Don't get stuck by Cargo Ship debris!
+(Level 2 - introduce the mechanic that moving away from a cargo ship creates debris that cannot be moved)
+#....t.....
+g...ici...i
+_...i....ii
+_....c..iti
+_..it@iiiit
+#cii.c...ic
+#itc.......
 
-#...ici.....
-G..ppctiii..
-_.....cii.@p
-_.......i.p.
-_..t........
-#.tti.......
-#....pii....
-#....i.ci...
-#......p....
+
+(Level 3 - Cargo Ship debris)
+#.......iic
+g..@..i.i..
+_i...itii..
+_.i.i.iiic.
+_.c.c.i...i
+#.t.i.i.ic.
+#ci.i...i..
+
+message Avoid the Pirates Ships!
+(Level 4 - introduce goal of avoiding pirate ships to get to cargo ships)
+#i...tiiiit
+gi.p.i..iii
+_i.i.@..p..
+_c.tcp....i
+_..iii.ppct
+#.iiiii.i..
+#iiiiiiiiii
+
+
+message You can move Pirate Ship debris.
+(Level 5 - introduce goal of destorying and pushing pirate ships to get to cargo ships)
+
+#iii.tiiiit
+gii..p..iii
+_i..p@...p.
+_tti.itiici
+_...pi.p..t
+#ci.p..ci..
+#iiiiiiiiii
 
 
 
