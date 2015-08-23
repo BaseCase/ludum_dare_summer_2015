@@ -6,6 +6,7 @@ youtube cmiX1FrL_88
 (verbose_logging)
 run_rules_on_level_start
 realtime_interval 1
+noaction
 
 ========
 OBJECTS
@@ -189,9 +190,11 @@ TentacleShip = TentacleCargoShip or TentaclePirateShip
 SOUNDS
 =======
 
-PirateShipwreck create 20478308
+PirateShipwreck create 29648102
 PlayerDead move 89775108
-CargoShipwreck create 77051508
+CargoShipwreck create 46205502
+CompletedGoal create 67660100
+EndLevel 45420300
 
 
 ================
@@ -257,7 +260,7 @@ LEVELS
 (((((((
 ((( JOSH LEVELS
 ))))))))))
-
+(
 (Test Level
 ..........i.
 .........ii.
@@ -305,7 +308,7 @@ _..t........
 #....pii....
 #....i.ci...
 #......p....
-
+)
 
 
 
@@ -385,3 +388,4 @@ _iii........
 #...........
 #...........
 #...........
+message GG!!!!!!
