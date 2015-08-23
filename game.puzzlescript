@@ -129,12 +129,12 @@ Yellow Brown #cfc930
 20000
 
 Tree
-Yellow Brown #05ff1a
-00000
-02200
-02220
-00100
-01110
+Brown #05ff1a
+.....
+.11..
+.111.
+..0..
+.000.
 
 Whirlpool1
 #0022ff #00e5ff DarkBlue
@@ -189,7 +189,7 @@ _ = EmptyGoal
 P = PirateShip
 C = CargoShip
 I = Island
-T = Tree
+T = Tree and Island
 W = Whirlpool1
 
 Ship = CargoShip or PirateShip
@@ -214,7 +214,8 @@ COLLISIONLAYERS
 
 Background
 temp
-Player, Ship, GoalShip, CompletedGoal, EmptyGoal, TentacleShip, CargoShipwreck, PirateShipwreck, Island, Tree, PlayerDead, GoalShip, Sidebar, Whirlpool
+Player, Ship, GoalShip, CompletedGoal, EmptyGoal, TentacleShip, CargoShipwreck, PirateShipwreck, Island, PlayerDead, GoalShip, Sidebar, Whirlpool
+Tree
 
 
 ======
