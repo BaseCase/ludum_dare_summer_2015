@@ -41,12 +41,12 @@ Pink Purple
 .....
 
 PlayerDead
-Black White
+Pink Purple
+.0..1
+.00..
 .....
-.000.
-01010
-00100
-01110
+00..0
+.1.0.
 
 GoalShip
 Black Red Gray DarkGrey
