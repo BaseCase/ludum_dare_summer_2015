@@ -429,9 +429,9 @@ message Surrounded!
 gc..i.i..c...
 _.i...ip.....
 _.riici.riii.
-_..p.@.p.itr.
-_itircii.ir..
-#........ti..
+_..p.@.p.it.
+_it.rcii.ir..
+_...i....ti..
 #..ctr...it..
 #...ii.......
 #....i.......
@@ -446,6 +446,31 @@ _i..pq...iii.
 #i..qc.i....d
 #ii.q..r..c..
 #diiiirrr..q.
+
+(Level 14)
+#c.i..@..irc.
+g..tri.ip...i
+_..i...p.iic.
+_..ppp..p..i.
+_..i.t.ii..i.
+#..i...i...r.
+#.riiriir.ii.
+#ri...tt.p.i.
+#...c.i..p.t.
+#........i...
+
+(Level 15)
+#c....i......
+g.ir..p.i....
+_ttiti.irii..
+_....p....i..
+_..piicii.it.
+_i..pc@c.p...
+_..p.iciri...
+#ii.i....ii..
+#....t.r.....
+#..c..rrr....
+
 
 message Yum! Time for a nap.
 message Created by basecase and herteljt for Ludum Dare 33
