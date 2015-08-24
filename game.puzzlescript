@@ -197,6 +197,8 @@ _ = EmptyGoal
 @ = Player
 P = PirateShip
 C = CargoShip
+Q = PirateShipwreck
+D = CargoShipwreck
 I = Island
 T = Tree and Island
 W = Whirlpool1
@@ -242,6 +244,7 @@ late [ Player | PirateShip ] -> [ Player | TentaclePirateShip ]
 [ < Player | TentaclePirateShip ] -> [ < Player | PirateShipwreck ]
 [ TentaclePirateShip | no Player ] -> [ PirateShip | ]
 [ > Player | PirateShipwreck ] -> [ > Player | > PirateShipwreck ]
+
 
 (((
 (Whirlpool Animations)
@@ -433,7 +436,16 @@ _itircii.ir..
 #...ii.......
 #....i.......
 
-
+(Level 13)
+giiiiiiiiiiii
+_iqqc........
+_@..qq...qqdq
+_...pp..d.pc.
+_i..pq...iii.
+#i..qp.dqiiid
+#i..qc.i....d
+#ii.q..r..c..
+#diiiirrr..q.
 
 message Yum! Time for a nap.
 message Created by basecase and herteljt for Ludum Dare 33
