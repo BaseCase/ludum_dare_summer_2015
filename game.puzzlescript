@@ -278,8 +278,7 @@ LEVELS
 =======
 
 message Ah, so hungry! Those cargo ships look amazing!
-(Level 1 - introduce goal of eating a set number of cargo ships
-	- maybe introduce idea of destroying boats if the player does it)
+(Level 1)
 #ri......t..
 git......ir.
 _...........
@@ -305,7 +304,7 @@ _....@.i....
 #...........
 
 
-(Level 3 - introduce idea that destroying boats is sometimes unavoidable but doesn't mean you lose)
+(Level 3)
 #...........
 g...........
 _......tiiri
@@ -317,7 +316,7 @@ _......iccir
 #ii.........
 #...........
 
-(Level 4 - introduce the mechanic that moving away from a cargo ship creates debris that cannot be moved)
+(Level 4)
 #.........ii
 g....t...iri
 _...rci...i.
@@ -354,7 +353,7 @@ _.i.i.iiic..i
 #...i...i....
 
 
-(Level 7 - you have to be careful about the path you take so you don't lock yourself in with shipwrecks)
+(Level 7)
 #rriiiii....
 giiirrriiii.
 _...ticccii.
@@ -368,7 +367,7 @@ _...........
 
 
 message Uh oh, those pirates look mean!
-(Level 8 - you can push pirate shipwrecks if you hadn't realized it yet)
+(Level 8)
 #itrii......
 gitri...@...
 _iii........
@@ -381,7 +380,7 @@ _iii........
 #......rii..
 
 
-(Level 9 - introduce goal of avoiding pirate ships to get to cargo ships, JOSH TO TWEAK)
+(Level 9)
 #............
 gi.......it..
 _i.p....irrii
@@ -394,7 +393,7 @@ _..iri.p.i...
 #......p...i.
 
 
-(Level 10 - introduce goal of destorying and pushing pirate ships to get to cargo ships)
+(Level 10)
 
 #............
 g....tiirr...
@@ -408,7 +407,7 @@ _tti.itiiciii
 #.....ti.....
 
 
-(Level 11 - introduce goal of destorying and pushing pirate ships to get to cargo ships)
+(Level 11)
 
 #...ii.....p.
 gc..itc..ti..
