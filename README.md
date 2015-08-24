@@ -7,7 +7,7 @@ Dare 33. The theme of the game jam was **"You are the monster"**.
 To play the game, you can do one of two things:
 
 ### Option 1
-Just [check out our shared version right here](insert link to final export here).
+Just [check out our shared version right here](http://www.puzzlescript.net/play.html?p=0eb7b2cdcdaaa548c091)
 
 ### Option 2
 1. Go to http://www.puzzlescript.net/editor.html
