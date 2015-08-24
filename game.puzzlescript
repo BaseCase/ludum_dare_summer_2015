@@ -197,6 +197,8 @@ _ = EmptyGoal
 @ = Player
 P = PirateShip
 C = CargoShip
+Q = PirateShipwreck
+D = CargoShipwreck
 I = Island
 T = Tree and Island
 W = Whirlpool1
@@ -242,6 +244,7 @@ late [ Player | PirateShip ] -> [ Player | TentaclePirateShip ]
 [ < Player | TentaclePirateShip ] -> [ < Player | PirateShipwreck ]
 [ TentaclePirateShip | no Player ] -> [ PirateShip | ]
 [ > Player | PirateShipwreck ] -> [ > Player | > PirateShipwreck ]
+
 
 (((
 (Whirlpool Animations)
